@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1917" />
+      <stop offset="100%" stop-color="#0c0a09" />
+    </linearGradient>
+    <linearGradient id="noodleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fb923c" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fef08a" />
+    </linearGradient>
+    <linearGradient id="bowlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="steamGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#fb923c" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#fed7aa" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect width="64" height="64" rx="16" fill="url(#bgGrad)" />
+  <rect width="64" height="64" rx="16" stroke="#f97316" stroke-opacity="0.35" stroke-width="1.5" />
+
+  <!-- Steam Wisps -->
+  <path d="M 23 18 C 21 14, 25 11, 23 7" stroke="url(#steamGrad)" stroke-width="2" stroke-linecap="round" fill="none" />
+  <path d="M 32 16 C 30 12, 34 9, 32 5" stroke="url(#steamGrad)" stroke-width="2.2" stroke-linecap="round" fill="none" />
+  <path d="M 41 18 C 39 14, 43 11, 41 7" stroke="url(#steamGrad)" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  <!-- Chopsticks -->
+  <line x1="16" y1="19" x2="52" y2="14" stroke="#f8fafc" stroke-width="2.2" stroke-linecap="round" />
+  <line x1="16" y1="23" x2="52" y2="17" stroke="#e2e8f0" stroke-width="2.2" stroke-linecap="round" />
+
+  <!-- Lifted Noodles hanging from chopsticks -->
+  <path d="M 27 21 C 27 27, 24 30, 24 36" stroke="url(#noodleGrad)" stroke-width="2.2" stroke-linecap="round" fill="none" />
+  <path d="M 31 20 C 31 27, 30 30, 31 36" stroke="url(#noodleGrad)" stroke-width="2.2" stroke-linecap="round" fill="none" />
+  <path d="M 35 19 C 35 25, 37 28, 36 36" stroke="url(#noodleGrad)" stroke-width="2.2" stroke-linecap="round" fill="none" />
+
+  <!-- Noodle Heap in Bowl -->
+  <path d="M 17 34 Q 32 26 47 34" stroke="url(#noodleGrad)" stroke-width="3.5" stroke-linecap="round" fill="none" />
+  <path d="M 20 32 Q 32 28 44 32" stroke="#fef08a" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  <!-- Noodle Bowl -->
+  <path d="M 13 34 C 13 47, 21 52, 32 52 C 43 52, 51 47, 51 34 C 51 32.5, 13 32.5, 13 34 Z" fill="url(#bowlGrad)" />
+
+  <!-- Bowl Rim Accent -->
+  <ellipse cx="32" cy="34" rx="19" ry="2.2" fill="#ffedd5" fill-opacity="0.3" />
+
+  <!-- Bowl Base / Foot -->
+  <path d="M 26 52 L 25 55 C 25 56, 39 56, 39 55 L 38 52 Z" fill="#c2410c" />
+</svg>
